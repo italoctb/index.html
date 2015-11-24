@@ -1,5 +1,5 @@
 git status
-git commit -am "digite aqui"
+git commit -am "Digitar uma mensagem aqui"
 git fetch
 git clone
 git add 
