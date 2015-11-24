@@ -1,5 +1,5 @@
 git status
-git commit -am "ashaijshda"
+git commit -am "digite aqui"
 git fetch
 git clone
 git add 
