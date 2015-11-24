@@ -1,0 +1,7 @@
+git status
+git commit -am "ashaijshda"
+git fetch
+git clone
+git add 
+git push (enviar para o repositorio)
+git pull (receber de todos)
