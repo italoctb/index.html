@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Momento Filosófico</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div ng-app="">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">E se...</span>
+        <input type="text" class="form-control" ng-model="phrase" placeholder="Faça sua Pergunta." aria-describedby="basic-addon1">
+        <span class="input-group-addon" id="basic-addon2">?</span>
+        <span class="input-group-btn">
+          <button class="btn btn-default" ng-click="setPhrase(phrase)" type="button">Pergunte!</button>
+        </span>
+      </div>
+
+      <div>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#perguntas"  role="tab" data-toggle="tab">Perguntas</a></li>
+          <li role="presentation"><a href="#respostas"  role="tab" data-toggle="tab">Respostas</a></li>
+
+
+        </ul>
+
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="perguntas">Você: E se {{phrase}} ?</div>
+            <div role="tabpanel" class="tab-pane" id="respostas">Sem respostas ainda</div>
+        </div>
+
+      </div>
+       
+
+  </body>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src ="bower_components/angular/angular.min.js"></script>
+
+</html>
